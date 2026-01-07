@@ -14,23 +14,55 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# ShadChat
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A professional, streamlined AI chat interface built with **Next.js 15**, **React 19**, and **Shadcn UI**. ShadChat provides a unified platform to interact with multiple LLM providers through a beautiful, responsive, and performance-optimized UI.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Multi-Provider Support**: Integrated with Google Gemini, Anthropic Claude, OpenAI, xAI Grok, Groq, and OpenRouter.
+- **Dynamic Model Fetching**: Automatically fetches and lists available models for each provider (where supported).
+- **Cost Tracking**: Real-time estimation of conversation costs based on token usage.
+- **Context Management**: Visual indicators for token usage and context window limits.
+- **Rich Media**: Support for image and document attachments (provider-dependent).
+- **Conversational Experience**: Streaming responses, message retries, and markdown rendering with GFM support.
+- **Smart Sidebar**: Organize chats with pinning, renaming, and local persistence.
+- **Premium UI**: Modern dark/light mode toggle, sleek animations, and responsive design.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 15 (App Router)** & **React 19**
+- **Tailwind CSS 4** for styling
+- **Shadcn UI** for high-quality accessible components
+- **Lucide React** for consistent iconography
+- **Local Storage** for state persistence and security
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Getting Started
 
-## Deploy on Vercel
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/KuzeyMurathan/shadchat.git
+    cd shadchat
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Configure API Keys**:
+    Open the application in your browser, navigate to **Settings**, and add your API keys for the desired providers.
+
+## 🔐 Privacy
+
+ShadChat is a client-side first application. Your API keys and conversation history are stored locally in your browser and are never sent to a middleman server — they go directly to the LLM providers.
+
+---
+Built with ❤️ for a better AI experience.
